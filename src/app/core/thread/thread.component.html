@@ -8,12 +8,12 @@
     <div class="col-11">
         <div class="p-2 m-2 ">
             <div class="text-white pb-2">
-                <div class="row">
-                    <div class="col-3 p-0"> r/{{thread.subreddit}}</div>
+                <div class="row pb-1">
+                    <div class="col-3 p-0"><img class="rounded-circle" src="https://picsum.photos/20" alt=""> r/{{thread.subreddit}}</div>
                     <div class="col text-secondary">Posted by u/{{thread.user}} the {{thread.date}}</div>
                    
                 </div>
-                <div class="row h4">{{thread.title}}</div>
+                <div class="row h5">{{thread.title}}</div>
                 <div class="row pb-1" *ngIf="thread.contentImage"><img src="{{thread.contentImage}}" alt=""></div>
                 <div class="row pb-1" *ngIf="!thread.contentImage">{{thread.contentText}}</div>
                 <div class="row">

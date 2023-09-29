@@ -1,3 +1,4 @@
+
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Thread } from 'src/app/interfaces/thread.interface';
@@ -10,9 +11,18 @@ import { ThreadService } from 'src/app/services/thread.service';
 })
 export class HomeComponent implements OnInit{
   threads$! : Observable<Thread[]>;
+  pageYoffset!: number;
+
+
   constructor(private threadService: ThreadService){}
   
   ngOnInit(){
     this.threads$ = this.threadService.getThreads();
   }
+
+  scrollToTop(){
+    window.scrollTo(0,0);
+  }
 }
+
+

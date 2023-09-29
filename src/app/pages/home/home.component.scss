@@ -1,9 +1,15 @@
 .home{
-    min-height: 1024px;
+    
     width: 85%;
     padding-top: 100px;
 }
 
 .home-container{
     background-color: black;
+}
+
+.btn{
+    position: fixed;
+    bottom:0px;
+    right: 20%;
 }

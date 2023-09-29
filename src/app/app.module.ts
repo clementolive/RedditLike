@@ -5,9 +5,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { NavbarComponent } from './core/navbar/navbar.component';
-import { ThreadComponent } from './pages/thread/thread.component';
 import { HttpClientModule } from '@angular/common/http';
-import { SideLinksComponent } from './pages/side-links/side-links.component';
+import { SideLinksComponent } from './core/side-links/side-links.component';
+import { ThreadComponent } from './core/thread/thread.component';
+import { ThreadPageComponent } from './pages/thread-page/thread-page.component';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { SideLinksComponent } from './pages/side-links/side-links.component';
     HomeComponent,
     NavbarComponent,
     ThreadComponent,
-    SideLinksComponent
+    SideLinksComponent,
+    ThreadPageComponent
   ],
   imports: [
     BrowserModule,
