@@ -1,0 +1,33 @@
+[
+{
+    "title": "Home landscape", 
+    "user": "Doxxa", 
+    "date": "01/08/2023", 
+    "subreddit": "photography", 
+    "upvotes": 34, 
+    "comments": 32, 
+    "contentText": "",
+    "contentImage": "https://picsum.photos/800"
+},
+{
+    "title": "New Chromebook", 
+    "user": "Hexlock", 
+    "date": "05/03/2023", 
+    "subreddit": "technology", 
+    "upvotes": 3, 
+    "comments": 2, 
+    "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
+    "contentImage": ""
+},
+{
+    "title": "Dune 2", 
+    "user": "Lorem", 
+    "date": "05/03/2022", 
+    "subreddit": "books", 
+    "upvotes": 331, 
+    "comments": 223, 
+    "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
+    "contentImage": ""
+}
+
+]
