@@ -1,1 +1,12 @@
-<p>thread-page works!</p>
+<app-navbar></app-navbar>
+
+<div class="threadPage-container">
+    <div *ngIf="thread$ | async as threadPage" class="bg-dark text-white w-50 m-auto">
+        <app-thread [thread]="threadPage.thread"></app-thread>
+    
+        <app-comment-recursive [comments]="threadPage.commentList"></app-comment-recursive>
+    
+    </div>
+
+</div>
+   

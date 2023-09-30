@@ -11,6 +11,7 @@ import { ThreadComponent } from './core/thread/thread.component';
 import { ThreadPageComponent } from './pages/thread-page/thread-page.component';
 import { CreatePostComponent } from './core/create-post/create-post.component';
 import { SortBannerComponent } from './core/sort-banner/sort-banner.component';
+import { CommentRecursiveComponent } from './core/comment-recursive/comment-recursive.component';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { SortBannerComponent } from './core/sort-banner/sort-banner.component';
     SideLinksComponent,
     ThreadPageComponent,
     CreatePostComponent,
-    SortBannerComponent
+    SortBannerComponent,
+    CommentRecursiveComponent
   ],
   imports: [
     BrowserModule,
