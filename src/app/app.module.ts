@@ -10,6 +10,7 @@ import { SideLinksComponent } from './core/side-links/side-links.component';
 import { ThreadComponent } from './core/thread/thread.component';
 import { ThreadPageComponent } from './pages/thread-page/thread-page.component';
 import { CreatePostComponent } from './core/create-post/create-post.component';
+import { SortBannerComponent } from './core/sort-banner/sort-banner.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { CreatePostComponent } from './core/create-post/create-post.component';
     ThreadComponent,
     SideLinksComponent,
     ThreadPageComponent,
-    CreatePostComponent
+    CreatePostComponent,
+    SortBannerComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,70 @@
+{
+    "title": "Silmarillion", 
+    "user": "Lorem", 
+    "date": "05/03/2022", 
+    "subreddit": "books", 
+    "upvotes": 31, 
+    "comments": 23, 
+    "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
+    "contentImage": "",    
+    "commentList": [
+        {
+            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+            "user": "Lorem", 
+            "image": "https://picsum.photos/800", 
+            "date": "05/03/2022", 
+            "upvotes": 31,
+            "answers": []
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+            "user": "Lorem", 
+            "image": "https://picsum.photos/800", 
+            "date": "05/03/2022", 
+            "upvotes": 31,
+            "answers": []
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+            "user": "Lorem", 
+            "image": "https://picsum.photos/800", 
+            "date": "05/03/2022", 
+            "upvotes": 31,
+            "answers": []
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+            "user": "Lorem", 
+            "image": "https://picsum.photos/800", 
+            "date": "05/03/2022", 
+            "upvotes": 31,
+            "answers": []
+        },
+        {
+            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+            "user": "Lorem", 
+            "image": "https://picsum.photos/800", 
+            "date": "05/03/2022", 
+            "upvotes": 31,
+            "answers": [
+                {
+                    "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+                    "user": "Lorem", 
+                    "image": "https://picsum.photos/800", 
+                    "date": "05/03/2022", 
+                    "upvotes": 31,
+                    "answers": []
+                },
+                {
+                    "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+                    "user": "Lorem", 
+                    "image": "https://picsum.photos/800", 
+                    "date": "05/03/2022", 
+                    "upvotes": 31,
+                    "answers": []
+                }
+            ]
+        }
+
+    ]
+}
