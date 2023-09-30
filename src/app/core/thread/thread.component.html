@@ -13,7 +13,7 @@
                     <div class="col text-secondary">Posted by u/{{thread.user}} the {{thread.date}}</div>
                    
                 </div>
-                <div class="row h5">{{thread.title}}</div>
+                <div class="row h5"><a routerLink="threadPage">{{thread.title}}</a></div>
                 <div class="row pb-1" *ngIf="thread.contentImage"><img src="{{thread.contentImage}}" alt=""></div>
                 <div class="row pb-1" *ngIf="!thread.contentImage">{{thread.contentText}}</div>
                 <div class="row">

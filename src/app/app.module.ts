@@ -9,6 +9,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SideLinksComponent } from './core/side-links/side-links.component';
 import { ThreadComponent } from './core/thread/thread.component';
 import { ThreadPageComponent } from './pages/thread-page/thread-page.component';
+import { CreatePostComponent } from './core/create-post/create-post.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { ThreadPageComponent } from './pages/thread-page/thread-page.component';
     NavbarComponent,
     ThreadComponent,
     SideLinksComponent,
-    ThreadPageComponent
+    ThreadPageComponent,
+    CreatePostComponent
   ],
   imports: [
     BrowserModule,

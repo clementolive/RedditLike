@@ -13,4 +13,8 @@ export class ThreadService {
   getThreads(): Observable<Thread[]>{
       return this.http.get<Thread[]>("../assets/threads.json");
   }
+
+//   getThread(): Observable<Thread[]>{
+//     return this.http.get<Thread[]>("../assets/threads.json", 1);
+// }
 }
