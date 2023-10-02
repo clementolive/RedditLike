@@ -1,0 +1,37 @@
+{
+    "title": "r/books", 
+    "description": "This is a moderated subreddit. It is our intent and purpose to foster and encourage in-depth discussion about all things related to books, authors, genres, or publishing in a safe, supportive environment. If you're looking for help with a personal book recommendation, consult our Weekly Recommendation Thread, Suggested Reading page, or ask in r/suggestmeabook.",
+    "createdAt": "02/05/2022", 
+    "members": 124653, 
+    "online": 321, 
+    "rank": 20, 
+
+    "rules": [
+        {"title": "1.Discussion is the Goal", "description":
+         "Rule 1: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "1.Discussion is the Goal", "description":
+        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "1.Discussion is the Goal", "description":
+        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "1.Discussion is the Goal", "description":
+        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "1.Discussion is the Goal", "description":
+        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "1.Discussion is the Goal", "description":
+        "Rule 1: All posts must be directly book related, informative, and discussion focused."}
+    ],
+
+    "scheduledPosts": [
+        {"title": "New releases", "date":"02/05/2023"},
+        {"title": "Favorite books", "date":"02/05/2023"},
+        {"title": "Simple questions", "date":"02/05/2023"}
+    ],
+
+    "moderators":[
+        { "name": "loremIpsum", "flair": "The lorem Ipsum"},
+        { "name": "loremIpsum", "flair": "The lorem Ipsum"},
+        { "name": "loremIpsum", "flair": "The lorem Ipsum"},
+        { "name": "loremIpsum", "flair": "The lorem Ipsum"},
+        { "name": "loremIpsum", "flair": "The lorem Ipsum"}
+    ]
+}

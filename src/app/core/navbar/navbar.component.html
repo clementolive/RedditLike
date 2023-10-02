@@ -8,13 +8,25 @@
         <li class="nav-item dropdown d-flex align-items-center">
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
                 aria-expanded="false"> Home</a>
-            <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                    <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <ul class="dropdown-menu dropdown-menu-dark p-2" *ngIf="dropdown$ | async as dropdown">
+                <li><h6 class="dropdown-header">Favorites</h6></li>
+                    <li *ngFor="let item of dropdown.favorites"><a class="dropdown-item ps-3" routerlink="#">{{item}}</a></li>
+                <li><h6 class="dropdown-header">Your communities</h6></li>
+                    <li *ngFor="let item of dropdown.communities"><a class="dropdown-item ps-3" routerlink="#">{{item}}</a></li>
+                <li><h6 class="dropdown-header">Custom feeds</h6></li>
+                    <li *ngFor="let item of dropdown.customFeeds"><a class="dropdown-item ps-3" routerlink="#">{{item}}</a></li>
+                <li><h6 class="dropdown-header">Following</h6></li>
+                    <li *ngFor="let item of dropdown.following"><a class="dropdown-item ps-3" routerlink="#">{{item}}</a></li>
+                <li><h6 class="dropdown-header">Feeds</h6></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-house-door-fill h6"></i>Home</a></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-arrow-up-right-circle h6"></i>Popular</a></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-bullseye h6"></i>All</a></li>
+                <li><h6 class="dropdown-header">Other</h6></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-plus-lg h6"></i>Create post</a></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-bell h6"></i>Notifications</a></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-diamond h6"></i>Premium</a></li>
+                    <li class="ps-3"><a href=""><i class="bi bi-camera h6"></i>Avatar</a></li>
+
             </ul>
         </li>
 

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavbarService } from 'src/app/services/navbar.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  constructor(private nav: NavbarService){
+
+  }
+  dropdown$ = this.nav.getHomeDropdown();
 }

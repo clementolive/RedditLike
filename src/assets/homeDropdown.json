@@ -1,0 +1,17 @@
+{
+    "favorites": [
+        "r/art", "r/funny", "r/funnyAnimals" 
+    ], 
+
+    "customFeeds": [
+        "r/interestingStuff", 
+        "r/movies"
+    ],
+    "communities":[
+        "r/science", "r/nature", "r/technology"
+    ], 
+    "following":[
+        "u/sciencedaily", "u/bookmaker", "u/lesnumeriques"
+    ] 
+
+}
