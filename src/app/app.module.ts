@@ -12,6 +12,10 @@ import { ThreadPageComponent } from './pages/thread-page/thread-page.component';
 import { CreatePostComponent } from './core/create-post/create-post.component';
 import { SortBannerComponent } from './core/sort-banner/sort-banner.component';
 import { CommentRecursiveComponent } from './core/comment-recursive/comment-recursive.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { DragDropModule } from '@angular/cdk/drag-drop';
+import { DragAndDropComponent } from './pages/drag-and-drop/drag-and-drop.component';
 
 
 @NgModule({
@@ -24,12 +28,17 @@ import { CommentRecursiveComponent } from './core/comment-recursive/comment-recu
     ThreadPageComponent,
     CreatePostComponent,
     SortBannerComponent,
-    CommentRecursiveComponent
+    CommentRecursiveComponent,
+    DragAndDropComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule, 
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    DragDropModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

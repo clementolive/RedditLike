@@ -9,16 +9,16 @@
     "rules": [
         {"title": "1.Discussion is the Goal", "description":
          "Rule 1: All posts must be directly book related, informative, and discussion focused."},
-        {"title": "1.Discussion is the Goal", "description":
-        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
-        {"title": "1.Discussion is the Goal", "description":
-        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
-        {"title": "1.Discussion is the Goal", "description":
-        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
-        {"title": "1.Discussion is the Goal", "description":
-        "Rule 1: All posts must be directly book related, informative, and discussion focused."},
-        {"title": "1.Discussion is the Goal", "description":
-        "Rule 1: All posts must be directly book related, informative, and discussion focused."}
+        {"title": "2.Uncivil behavior", "description":
+        "Rule 2: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "3.Recommendation Requests", "description":
+        "Rule 3: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "4.What's That Book Called?", "description":
+        "Rule 4: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "5.Promotional", "description":
+        "Rule 5: All posts must be directly book related, informative, and discussion focused."},
+        {"title": "6.Distribution or solicitation for pirated material", "description":
+        "Rule 6: All posts must be directly book related, informative, and discussion focused."}
     ],
 
     "scheduledPosts": [
