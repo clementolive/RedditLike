@@ -4,6 +4,17 @@
 }
 
 .canvas{
-    width: 1500; 
-    min-height: 500;
+    width: 500px; 
+    height: 200px;
 }
+
+.example-list {
+    border: solid 1px #ccc;
+    border-radius: 4px;
+    width: 500px;
+    max-width: 100%;
+  }
+
+  .example-box {
+    border-bottom: solid 1px #ccc;
+  }

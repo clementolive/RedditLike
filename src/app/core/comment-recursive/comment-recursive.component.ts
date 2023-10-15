@@ -22,7 +22,7 @@ import { _Comment } from 'src/app/interfaces/-comment';
                       <span class="pe-2">Share</span>
                       <i class="bi bi-three-dots"></i>
                 </li>
-              </ul>
+              </ul> 
              
               <app-comment-recursive class="pe-2 ps-3" [comments]="comment.comments" *ngIf="comment.comments"></app-comment-recursive>
           </li>

@@ -1,7 +1,12 @@
 <p>drag-and-drop works!</p>
 
-<div class="container canvas border border-secondary">
-
-        <div class="col-3 bg-dark square"  cdkDrag></div>
-   
+<div class="canvas border border-secondary mb-2">
+        <div class="bg-dark square"  cdkDrag cdkDragBoundary=".canvas"></div>
+        <div class="bg-danger square"  cdkDrag cdkDragBoundary=".canvas"></div>
 </div>
+
+<div cdkDropList #firstList="cdkDropList" class="example-list" (cdkDropListDropped)="drop($event)">
+        <div class="example-box" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+</div>
+
+<app-reorder-list></app-reorder-list>
