@@ -5,7 +5,10 @@
         <div class="row">
             <div class="col-8 bg-dark">
                 <app-thread [thread]="threadPage.thread"></app-thread>
-                <app-comment-recursive [comments]="threadPage.commentList"></app-comment-recursive>
+                <div *ngFor="let comment of threadPage.commentList">
+                    <app-comment-recursive [comment]="comment"></app-comment-recursive>
+                </div>
+
             </div>
 
             <div class="col-4" *ngIf="subInfo$|async as sub">

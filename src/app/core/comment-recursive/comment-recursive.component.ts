@@ -5,7 +5,7 @@ import { _Comment } from 'src/app/interfaces/-comment';
   selector: 'app-comment-recursive',
   styleUrls: ['./comment-recursive.component.scss'],
   template: `
-     <div *ngFor="let comment of comments">
+     
       <ul>
           <li class="text-secondary">
             <img src={{comment.image}} alt="" class="comment-image rounded-circle">
@@ -16,39 +16,61 @@ import { _Comment } from 'src/app/interfaces/-comment';
                   <li class="text-secondary">
                       <i class="bi bi-caret-up" (click)="upvote()" [ngClass]="{upvotedClass: upvoted == 1}"></i>
                       <span class="text-white">{{comment.upvotes}}</span>
-                      <i class="bi bi-caret-down pe-2" [ngClass]="{upvotedClass: upvoted == -1}"></i>
+                      <i class="bi bi-caret-down pe-2" (click)="downvote()" [ngClass]="{upvotedClass: upvoted == -1}"></i>
                       <i class="bi bi-chat-left pe-1"></i>
                       <span class="pe-2 ">Reply</span>
                       <span class="pe-2">Share</span>
                       <i class="bi bi-three-dots"></i>
                 </li>
               </ul> 
-             
-              <app-comment-recursive class="pe-2 ps-3" [comments]="comment.comments" *ngIf="comment.comments"></app-comment-recursive>
+
+              <div *ngFor="let comment of comment.comments">
+                <app-comment-recursive class="pe-2 ps-3" [comment]="comment" *ngIf="comment"></app-comment-recursive>
+              </div>
           </li>
          
       </ul>
-    </div>
+   
   `,
 })
 export class CommentRecursiveComponent {
   
-  @Input() comments!: _Comment[];
+  @Input() comment!: _Comment;
   upvoted = 0; 
 
   upvote() {
     switch(this.upvoted){
       case -1: 
         this.upvoted = 1; 
+        this.comment.upvotes+=2; 
 
       break;
       case 0: 
        this.upvoted = 1; 
+       this.comment.upvotes+=1; 
 
       break; 
       case 1: 
         this.upvoted = 0; 
+        this.comment.upvotes--; 
 
+      break; 
+    }
+  }
+
+  downvote(){
+    switch(this.upvoted){
+      case -1: 
+        this.upvoted = 0; 
+        this.comment.upvotes+=1; 
+      break;
+      case 0: 
+       this.upvoted = -1; 
+       this.comment.upvotes--; 
+      break; 
+      case 1: 
+        this.upvoted = -1; 
+        this.comment.upvotes-=2; 
       break; 
     }
   }
