@@ -1,15 +1,20 @@
 <div class="row bg-dark border border-secondary mb-2 rounded-1">
     <div class="col-1 text-white text-center main-darker">
-        <div class="row"><i class="bi bi-chevron-up"></i></div>
+        <div class="row" (click)="upvote()" >
+        <i class="bi bi-chevron-up" [ngClass]="{upvotedClass: upvoted == 1}"></i>
+    </div>
+        
         <div class="row"><span>{{thread.upvotes}}</span></div>
-        <div class="row"><i class="bi bi-chevron-down"></i></div>
+        <div class="row"
+        (click)="downvote()" ><i class="bi bi-chevron-down" [ngClass]="{upvotedClass: upvoted == -1}"></i></div>
     </div>
 
     <div class="col-11">
         <div class="p-2 m-2 ">
             <div class="text-white pb-2">
                 <div class="row pb-1">
-                    <div class="col-3 p-0"><img class="rounded-circle" src="https://picsum.photos/20" alt=""> r/{{thread.subreddit}}</div>
+                    <div class="col-3 p-0"><img class="rounded-circle" src="https://picsum.photos/20" alt=""
+                        >  <a routerLink="">r/{{thread.subreddit}}</a></div>
                     <div class="col text-secondary">Posted by u/{{thread.user}} the {{thread.date}}</div>
                    
                 </div>
@@ -18,9 +23,9 @@
                 <div class="row pb-1" *ngIf="!thread.contentImage">{{thread.contentText}}</div>
                 <div class="row">
                     <div class="col p-0">
-                    <i class="bi bi-chat-left pe-2"></i>{{thread.commentsCount}} Comments
-                    <i class="bi bi-share ps-3"></i> Share
-                    <i class="bi bi-bookmark ps-3"></i> Save
+                    <i class="bi bi-chat-left pe-2"></i><a routerLink="threadPage">{{thread.commentsCount}} Comments</a>
+                    <i class="bi bi-share ps-3"></i> <a routerLink="">Share</a>
+                    <i class="bi bi-bookmark ps-3"></i> <a routerLink="">Save</a>
                     <i class="bi bi-three-dots align-bottom ps-3"></i>
                     </div>
                 </div>

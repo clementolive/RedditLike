@@ -5,7 +5,7 @@
     "date": "01/08/2023", 
     "subreddit": "photography", 
     "upvotes": 34, 
-    "comments": 32, 
+    "commentsCount": 32, 
     "contentText": "",
     "contentImage": "https://picsum.photos/800"
 },
@@ -15,7 +15,7 @@
     "date": "05/03/2023", 
     "subreddit": "technology", 
     "upvotes": 3, 
-    "comments": 2, 
+    "commentsCount": 2, 
     "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
     "contentImage": ""
 },
@@ -25,7 +25,7 @@
     "date": "05/03/2022", 
     "subreddit": "books", 
     "upvotes": 331, 
-    "comments": 223, 
+    "commentsCount": 223, 
     "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
     "contentImage": ""
 },
@@ -35,7 +35,7 @@
     "date": "05/03/2022", 
     "subreddit": "books", 
     "upvotes": 31, 
-    "comments": 23, 
+    "commentsCount": 23, 
     "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
     "contentImage": ""
 },
@@ -45,7 +45,7 @@
     "date": "01/08/2023", 
     "subreddit": "photography", 
     "upvotes": 34, 
-    "comments": 32, 
+    "commentsCount": 32, 
     "contentText": "",
     "contentImage": "https://picsum.photos/800"
 },
@@ -55,7 +55,7 @@
     "date": "05/03/2023", 
     "subreddit": "technology", 
     "upvotes": 3, 
-    "comments": 2, 
+    "commentsCount": 2, 
     "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
     "contentImage": ""
 },
@@ -65,7 +65,7 @@
     "date": "05/03/2022", 
     "subreddit": "books", 
     "upvotes": 331, 
-    "comments": 223, 
+    "commentsCount": 223, 
     "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
     "contentImage": ""
 },
@@ -75,7 +75,7 @@
     "date": "05/03/2022", 
     "subreddit": "books", 
     "upvotes": 31, 
-    "comments": 23, 
+    "commentsCount": 23, 
     "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
     "contentImage": ""
 }
