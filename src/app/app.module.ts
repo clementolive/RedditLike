@@ -17,6 +17,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DragAndDropComponent } from './pages/drag-and-drop/drag-and-drop.component';
 import { ReorderListComponent } from './core/drag-and-drop/reorder-list/reorder-list.component';
+import { ProfileComponent } from './pages/profile/profile.component';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { ReorderListComponent } from './core/drag-and-drop/reorder-list/reorder-
     SortBannerComponent,
     CommentRecursiveComponent,
     DragAndDropComponent,
-    ReorderListComponent
+    ReorderListComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

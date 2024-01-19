@@ -1,0 +1,86 @@
+<app-navbar></app-navbar>
+<div class="profile-container">
+    <div class="container-fluid profile-navbar p-2 bg-dark text-white mb-3 border border-secondary">
+        <div class="row justify-content-center">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col">Overview</div>
+                    <div class="col">Posts</div>
+                    <div class="col">Comments</div>
+                    <div class="col">Saved</div>
+                    <div class="col">Hidden</div>
+                    <div class="col">Upvoted</div>
+                    <div class="col">Downvoted</div>
+                </div>
+              
+            </div>
+            
+        </div>
+    </div>
+
+
+
+    <div class="row d-flex justify-content-center">
+
+        <div class="col-6">
+
+            <div *ngFor="let thread of threads$ | async">
+                 <app-thread [thread]="thread"></app-thread>
+            </div>
+            
+         </div>
+
+         <div class="col-3">
+            <div class="container bg-dark text-white rounded-1 border border-secondary p-2">
+                <div class="row p-2">
+                    <div class="col">
+                        <div class="row"><img class="avatar"
+                            src="https://api.dicebear.com/7.x/lorelei/svg?seed=Cali"
+                            alt="avatar" /></div>
+                        
+                        <div class="row h2 d-flex justify-content-center">{{myName}}</div>
+                        <div class="row text-secondary d-flex justify-content-center">u/{{myName}} 6y</div>
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center mt-1">
+                    <button type="button" class="btn btn-warning rounded-5 btn-sm w-50" (click)="styleAvatar()">Style avatar</button>
+                </div>
+                <div class="row mt-1">
+                    <div class="col ps-3 ms-3">
+                        <div class="row">Karma</div>
+                        <div class="row text-secondary">2,594</div>
+                    </div>
+                    <div class="col">
+                        <div class="row">Cake day</div>
+                        <div class="row text-secondary">March 13, 2017</div>
+                    </div>
+                </div>
+
+                <div class="row d-flex justify-content-center mt-1">
+                    <button type="button" class="btn btn-secondary rounded-5 btn-sm w-50" (click)="addSocial()">Add social link</button>
+                </div>
+                <div class="row d-flex justify-content-center mt-1">
+                    <button type="button" class="btn btn-light rounded-5 btn-sm w-50" (click)="newPost()">New Post</button>
+                </div>
+                <div class="row d-flex justify-content-end pe-3 m-2">More options</div>   
+            </div>
+
+            <div class="container bg-dark text-white rounded-1 border border-secondary p-2 mt-3">
+                <div class="row text-secondary ps-3">Trophy case</div>
+                <div class="row p-2">
+                    <div class="col-2"><img src="https://picsum.photos/50" alt=""></div>
+                    <div class="col">Five-Year Club</div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-2"><img src="https://picsum.photos/50" alt=""></div>
+                    <div class="col">Place '22</div>
+                </div>
+                <div class="row p-2">
+                    <div class="col-2"><img src="https://picsum.photos/50" alt=""></div>
+                    <div class="col">First Placer '22</div>
+                </div>
+            </div>
+
+         </div>
+    </div>
+</div>

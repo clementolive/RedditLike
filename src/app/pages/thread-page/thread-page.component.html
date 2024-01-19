@@ -1,6 +1,6 @@
 <app-navbar></app-navbar>
 
-<div class="threadPage-container">
+<div class="threadPage-container pt-3">
     <div *ngIf="thread$ | async as threadPage" class="text-white w-75 m-auto">
         <div class="row">
             <div class="col-8 bg-dark">
@@ -49,7 +49,7 @@
                 <div class="container bg-dark text-white rounded-1 border border-secondary p-3 mt-2">
                     <div class="row text-secondary h6 ps-2">Scheduled posts</div>
                     <div class="row ps-2 " *ngFor="let post of sub.scheduledPosts">
-                        <div class="row">{{post.title}}</div>
+                        <div class="row"><a routerLink="threadPage">{{post.title}}</a></div>
                         <div class="row text-secondary pb-1">{{post.date}}</div>
                         <hr>
                     </div>
