@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Thread } from 'src/app/interfaces/thread';
 import { ThreadService } from 'src/app/services/thread.service';
 
 @Component({
@@ -6,7 +8,7 @@ import { ThreadService } from 'src/app/services/thread.service';
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss']
 })
-export class ProfileComponent {
+export class ProfileComponent implements OnInit{
 styleAvatar() {
 throw new Error('Method not implemented.');
 }
@@ -14,12 +16,12 @@ addSocial() {
 throw new Error('Method not implemented.');
 }
 
-  myName: string = "myName";  
+  myName = "myName";  
 
   newPost() {
   throw new Error('Method not implemented.');
   }
-  threads$: any;
+  threads$!: Observable<Thread[]>;
   constructor(private threadService: ThreadService){}
   
   ngOnInit(){

@@ -14,9 +14,9 @@ import { _Comment } from 'src/app/interfaces/-comment';
           <li class="threadline">  <span class="ps-2">{{comment.content}}</span>
               <ul class="p-1">
                   <li class="text-secondary">
-                      <i class="bi bi-caret-up" (click)="upvote()" [ngClass]="{upvotedClass: upvoted == 1}"></i>
+                      <i class="bi bi-caret-up" (click)="upvote()" [ngClass]="{upvotedClass: upvoted === 1}"></i>
                       <span class="text-white">{{comment.upvotes}}</span>
-                      <i class="bi bi-caret-down pe-2" (click)="downvote()" [ngClass]="{upvotedClass: upvoted == -1}"></i>
+                      <i class="bi bi-caret-down pe-2" (click)="downvote()" [ngClass]="{upvotedClass: upvoted === -1}"></i>
                       <i class="bi bi-chat-left pe-1"></i>
                       <span class="pe-2 ">Reply</span>
                       <span class="pe-2">Share</span>

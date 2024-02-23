@@ -1,12 +1,12 @@
 <div class="row bg-dark border border-secondary mb-2 rounded-1">
     <div class="col-1 text-white text-center main-darker">
         <div class="row" (click)="upvote()" >
-        <i class="bi bi-chevron-up" [ngClass]="{upvotedClass: upvoted == 1}"></i>
+        <i class="bi bi-chevron-up" [ngClass]="{upvotedClass: upvoted === 1}"></i>
     </div>
         
         <div class="row"><span>{{thread.upvotes}}</span></div>
         <div class="row"
-        (click)="downvote()" ><i class="bi bi-chevron-down" [ngClass]="{upvotedClass: upvoted == -1}"></i></div>
+        (click)="downvote()" ><i class="bi bi-chevron-down" [ngClass]="{upvotedClass: upvoted === -1}"></i></div>
     </div>
 
     <div class="col-11">
