@@ -1,5 +1,11 @@
 # RedditLike
 
+This project features : 
+- Top-down architecture 
+- Bootstrap, Angular Material, ESLint 
+
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.5.
 
 ## Development server
