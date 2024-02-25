@@ -3,6 +3,7 @@ import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Thread } from '../interfaces/thread';
 import { ThreadPage } from '../interfaces/thread-page';
+import { SubredditInfo } from '../interfaces/subredditInfo';
 
 @Injectable({
   providedIn: 'root'
@@ -10,7 +11,7 @@ import { ThreadPage } from '../interfaces/thread-page';
 export class ThreadService {
   constructor(private http: HttpClient) { }
 
-  getThread(threadId: number) {
+  getThread() {
     return this.http.get<ThreadPage>("../assets/thread.json");
   }
 
@@ -19,7 +20,7 @@ export class ThreadService {
   }
 
   getSubredditInfo(){
-    return this.http.get<any>("../assets/subredditInfo.json");
+    return this.http.get<SubredditInfo>("../assets/subredditInfo.json");
   }
 
 }
