@@ -17,9 +17,9 @@ export class ThreadPageComponent {
   thread$: Observable<ThreadPage> = this.threadService.getThread();
   subInfo$: Observable<SubredditInfo> = this.threadService.getSubredditInfo();
 
-  userUpvotes = 0;
+  userVotes = 0;
 
   countVotes(newVote: number) {
-    this.userUpvotes += newVote;
+    this.userVotes += newVote;
   }
 }

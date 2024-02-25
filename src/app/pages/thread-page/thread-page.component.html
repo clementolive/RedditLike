@@ -7,7 +7,7 @@
                 <!-- Post presentation -->
                 <app-thread [thread]="threadPage.thread"></app-thread>
 
-                <div>My Upvote activity: {{userUpvotes}}</div>
+                <div>My Upvote activity: {{userVotes}}</div>
 
                 <!-- Comments -->
                 <div *ngFor="let comment of threadPage.commentList">
@@ -64,8 +64,6 @@
                     </div>
                 </div>
             </div>
-
-
         </div>
 
     </div>

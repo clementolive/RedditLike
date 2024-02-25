@@ -4,7 +4,7 @@
           <img src={{comment.image}} alt="" class="comment-image rounded-circle">
             {{comment.user}} made {{comment.date}}
         </li>
-        <li class="threadline">  <span class="ps-2">{{comment.content}}</span>
+        <li class="threadline">  <span class="ps-2">{{comment.content | lowercase | capitalize: "Signature by custom pipe."}}</span>
             <ul class="p-1">
                 <li class="text-secondary">
                     <i class="bi bi-caret-up" (click)="upvote()" [ngClass]="{upvotedClass: upvoted === 1}"></i>

@@ -12,7 +12,7 @@
     
     "commentList": [
         {
-            "content": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.", 
+            "content": "sentence without uppercase on first letter (custom pipe test).", 
             "user": "Lorem", 
             "image": "https://picsum.photos/800", 
             "date": "05/03/2022", 

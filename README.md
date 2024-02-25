@@ -1,9 +1,17 @@
 # RedditLike
 
 This project features : 
+## Architecture:
 - Top-down architecture (Home -> Categories -> Threads -> Comments)
 - Bubble Up Events (child comment sends vote event to Thread, so Thread counts vote activity)
-- Bootstrap, Angular Material, ESLint 
+- Recursive component (Comment can get comments)
+- Custom pipe with parameters, chaining (multiple pipes), and optimization (pure pipe)
+  
+## Technologies:
+- Bootstrap, Angular Material, ESLint, Picsum API (images) 
+
+
+
   
 
 
