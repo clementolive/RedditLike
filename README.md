@@ -2,7 +2,9 @@
 
 This project features : 
 - Top-down architecture (Home -> Categories -> Threads -> Comments)
+- Bubble Up Events (child comment sends vote event to Thread, so Thread counts vote activity)
 - Bootstrap, Angular Material, ESLint 
+  
 
 
 

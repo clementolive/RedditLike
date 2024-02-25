@@ -4,13 +4,19 @@
     <div *ngIf="thread$ | async as threadPage" class="text-white w-75 m-auto">
         <div class="row">
             <div class="col-8 bg-dark">
+                <!-- Post presentation -->
                 <app-thread [thread]="threadPage.thread"></app-thread>
+
+                <div>My Upvote activity: {{userUpvotes}}</div>
+
+                <!-- Comments -->
                 <div *ngFor="let comment of threadPage.commentList">
-                    <app-comment-recursive [comment]="comment"></app-comment-recursive>
+                    <app-comment-recursive [comment]="comment" (voteEvent)="countVotes($event)"></app-comment-recursive>
                 </div>
 
             </div>
 
+            <!-- Side infos -->
             <div class="col-4" *ngIf="subInfo$|async as sub">
                 <div class="container bg-dark text-white rounded-1 border border-secondary p-3">
                     <div class="row ps-2 text-secondary h6">About community</div>
@@ -24,11 +30,13 @@
                     <hr>
                     <div class="row">
                         <div class="col">
-                            <div>{{sub.members  | number}} </div>
-                            <div class="text-secondary">Members</div></div>
+                            <div>{{sub.members | number}} </div>
+                            <div class="text-secondary">Members</div>
+                        </div>
                         <div class="col">
                             <div><i class="bi bi-dot h4 text-success"></i>{{sub.online}}</div>
-                            <div class="text-secondary"> Online</div></div>
+                            <div class="text-secondary"> Online</div>
+                        </div>
                         <div class="col">
                             <div>#{{sub.rank}}</div>
                             <div class="text-secondary">Ranked by size</div>
@@ -38,14 +46,15 @@
 
                 <div class="container bg-dark text-white rounded-1 border border-secondary p-3 mt-2">
                     <div class="row h6">Rules</div>
-                    <mat-expansion-panel [hideToggle]="false" *ngFor="let rule of sub.rules" class="pb-1 bg-dark text-white">
+                    <mat-expansion-panel [hideToggle]="false" *ngFor="let rule of sub.rules"
+                        class="pb-1 bg-dark text-white">
                         <mat-expansion-panel-header>
                             <mat-panel-title class="text-white">{{rule.title}}</mat-panel-title>
                         </mat-expansion-panel-header>
-                       <span class="rule-description  text-white">{{rule.description}}</span>
+                        <span class="rule-description  text-white">{{rule.description}}</span>
                     </mat-expansion-panel>
                 </div>
-           
+
                 <div class="container bg-dark text-white rounded-1 border border-secondary p-3 mt-2">
                     <div class="row text-secondary h6 ps-2">Scheduled posts</div>
                     <div class="row ps-2 " *ngFor="let post of sub.scheduledPosts">
@@ -54,12 +63,11 @@
                         <hr>
                     </div>
                 </div>
-        </div>
-                    
+            </div>
+
 
         </div>
 
     </div>
 
 </div>
-   

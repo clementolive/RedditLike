@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./side-links.component.scss']
 })
 export class SideLinksComponent {
+  getPremium() {
+    console.log("get premium"); 
+  }
 
 }

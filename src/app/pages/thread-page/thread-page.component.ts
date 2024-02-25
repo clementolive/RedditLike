@@ -11,8 +11,15 @@ import { ThreadService } from 'src/app/services/thread.service';
   styleUrls: ['./thread-page.component.scss']
 })
 export class ThreadPageComponent {
+
   constructor(private threadService: ThreadService){}
 
   thread$: Observable<ThreadPage> = this.threadService.getThread();
   subInfo$: Observable<SubredditInfo> = this.threadService.getSubredditInfo();
+
+  userUpvotes = 0;
+
+  countVotes(newVote: number) {
+    this.userUpvotes += newVote;
+  }
 }
