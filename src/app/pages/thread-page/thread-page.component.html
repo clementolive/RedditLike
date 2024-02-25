@@ -7,7 +7,7 @@
                 <!-- Post presentation -->
                 <app-thread [thread]="threadPage.thread"></app-thread>
 
-                <div>My Upvote activity: {{userVotes}}</div>
+                <div appHighlight color="lightgreen" class="col-2">My Upvote activity: {{userVotes}}</div>
 
                 <!-- Comments -->
                 <div *ngFor="let comment of threadPage.commentList">

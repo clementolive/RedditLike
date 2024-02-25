@@ -6,6 +6,7 @@ This project features :
 - Bubble Up Events (child comment sends vote event to Thread, so Thread counts vote activity)
 - Recursive component (Comment can get comments)
 - Custom pipe with parameters, chaining (multiple pipes), and optimization (pure pipe)
+- Custom directive with parameters and reacting to events (@HostListener) to highlight a color 
   
 ## Technologies:
 - Bootstrap, Angular Material, ESLint, Picsum API (images) 

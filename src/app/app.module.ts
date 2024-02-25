@@ -18,7 +18,8 @@ import { DragDropModule } from '@angular/cdk/drag-drop';
 import { DragAndDropComponent } from './pages/drag-and-drop/drag-and-drop.component';
 import { ReorderListComponent } from './core/drag-and-drop/reorder-list/reorder-list.component';
 import { ProfileComponent } from './pages/profile/profile.component';
-import { CapitalizePipe } from './pipes/capitalize.pipe';
+import { CapitalizePipe } from './core/pipes/capitalize.pipe';
+import { HighlightDirective } from './core/directives/highlight.directive';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { CapitalizePipe } from './pipes/capitalize.pipe';
     DragAndDropComponent,
     ReorderListComponent,
     ProfileComponent,
-    CapitalizePipe
+    CapitalizePipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
