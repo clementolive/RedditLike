@@ -23,9 +23,9 @@ export class ThreadPageComponent implements OnInit{
   threadId!: number;
 
   ngOnInit(): void {
-    const routeId = +this.route.snapshot.params['id'];
+    const routeId = this.route.snapshot.params['id'];
     this.thread$ = this.threadService.getThread(routeId);
-    this.subInfo$ = this.threadService.getSubredditInfo(routeId);
+    this.subInfo$ = this.threadService.getSubredditInfo("technology");
   }
 
   countVotes(newVote: number) {

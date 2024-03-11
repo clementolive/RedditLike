@@ -22,16 +22,16 @@ export class ProfileComponent implements OnInit {
   async ngOnInit() {
     this.threads$ = this.threadService.getThreads();
 
-    try {
-      const docRef = await addDoc(collection(this.firebaseService.db, "spaceship"), {
-        first: "Ada",
-        last: "Lovelace",
-        born: 1815
-      });
-      console.log("Document written with ID: ", docRef.id);
-    } catch (e) {
-      console.error("Error adding document: ", e);
-    }
+    // try {
+    //   const docRef = await addDoc(collection(this.firebaseService.db, "spaceship"), {
+    //     first: "Ada",
+    //     last: "Lovelace",
+    //     born: 1815
+    //   });
+    //   console.log("Document written with ID: ", docRef.id);
+    // } catch (e) {
+    //   console.error("Error adding document: ", e);
+    // }
   }
 
 

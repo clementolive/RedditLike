@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Router } from '@angular/router';
 import { Thread } from 'src/app/interfaces/thread';
+import { ThreadService } from 'src/app/services/thread.service';
 
 @Component({
   selector: 'app-thread',
@@ -10,13 +11,19 @@ import { Thread } from 'src/app/interfaces/thread';
 export class ThreadComponent {
 
 
+
   @Input() thread!: Thread;
   upvoted = 0; 
 
-  constructor(private router:Router){}
+  constructor(private router:Router,
+    private threadService: ThreadService){}
 
   goToThread(id: number) {
     this.router.navigate(["threadPage", id]);
+  }
+
+  goToSubreddit(subreddit: string) {
+    this.router.navigate(["subredditPage", subreddit]);
   }
 
   upvote() {

@@ -1,0 +1,7 @@
+<app-navbar></app-navbar>
+
+<div class="container mt-5">
+    <div *ngFor="let thread of threads$ | async">
+        <app-thread [thread]="thread"></app-thread>
+    </div>
+</div>

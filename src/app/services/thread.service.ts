@@ -21,8 +21,12 @@ export class ThreadService {
       return this.http.get<Thread[]>("../assets/threads.json");
   }
 
-  getSubredditInfo(id:number){
+  getSubredditInfo(subreddit:string){
     return this.http.get<SubredditInfo>("../assets/subredditInfo.json");
+  }
+
+  getSubredditThreads(subreddit:string){
+    return this.http.get<SubredditInfo>("../assets/subreddits/" + subreddit + ".json");
   }
 
 }

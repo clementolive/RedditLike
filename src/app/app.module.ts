@@ -20,6 +20,7 @@ import { ReorderListComponent } from './core/drag-and-drop/reorder-list/reorder-
 import { ProfileComponent } from './pages/profile/profile.component';
 import { CapitalizePipe } from './core/pipes/capitalize.pipe';
 import { HighlightDirective } from './core/directives/highlight.directive';
+import { SubredditPageComponent } from './pages/subreddit-page/subreddit-page.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { HighlightDirective } from './core/directives/highlight.directive';
     ReorderListComponent,
     ProfileComponent,
     CapitalizePipe,
-    HighlightDirective
+    HighlightDirective,
+    SubredditPageComponent
   ],
   imports: [
     BrowserModule,
