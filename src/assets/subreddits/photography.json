@@ -1,0 +1,33 @@
+
+[
+{
+    "title": "Home landscape", 
+    "user": "Doxxa", 
+    "date": "01/08/2023", 
+    "subreddit": "photography", 
+    "upvotes": 34, 
+    "commentsCount": 32, 
+    "contentText": "",
+    "contentImage": "assets/landscape.jpg"
+},
+{
+    "title": "Flower", 
+    "user": "Doxxa", 
+    "date": "02/05/2021", 
+    "subreddit": "photography", 
+    "upvotes": 24, 
+    "commentsCount": 33, 
+    "contentText": "",
+    "contentImage": "assets/narcissus.jpg"
+},
+{
+    "title": "Dune", 
+    "user": "Doxxa", 
+    "date": "03/04/2023", 
+    "subreddit": "photography", 
+    "upvotes": 14, 
+    "commentsCount": 11, 
+    "contentText": "",
+    "contentImage": "assets/dune.jpg"
+}
+]

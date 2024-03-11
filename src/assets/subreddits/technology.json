@@ -1,0 +1,43 @@
+
+[
+    {
+        "title": "New Chromebook", 
+        "user": "Hexlock", 
+        "date": "05/03/2023", 
+        "subreddit": "technology", 
+        "upvotes": 3, 
+        "commentsCount": 2, 
+        "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
+        "contentImage": "assets/laptop.jpg"
+    },
+    {
+        "title": "Issue with Windows 10", 
+        "user": "Hexlock", 
+        "date": "02/05/2020", 
+        "subreddit": "technology", 
+        "upvotes": 3, 
+        "commentsCount": 2, 
+        "contentText": "My Windows 10 keep rebooting every 10mn, can you help me? I'm on a laptop with a i5-12400KF",
+        "contentImage": "assets/laptop.jpg"
+    },
+    {
+        "title": "New Ipad 10", 
+        "user": "Hexlock", 
+        "date": "01/03/2023", 
+        "subreddit": "technology", 
+        "upvotes": 3, 
+        "commentsCount": 2, 
+        "contentText": "Lorem",
+        "contentImage": "assets/ipad.jpg"
+    },
+    {
+        "title": "Should I get an Ipad for drawing ?", 
+        "user": "Hexlock", 
+        "date": "05/04/2022", 
+        "subreddit": "technology", 
+        "upvotes": 3, 
+        "commentsCount": 2, 
+        "contentText": "Hi, I want to learn how to draw digital art but I'm not sure if I should get an Ipad or more expensive devices.",
+        "contentImage": ""
+    }
+    ]

@@ -7,7 +7,7 @@ import { ProfileComponent } from './pages/profile/profile.component';
 
 const routes: Routes = [
   {path: "", component: HomeComponent},
-  {path: "threadPage", component: ThreadPageComponent},
+  {path: "threadPage/:id", component: ThreadPageComponent},
   {path: "profilePage", component: ProfileComponent},
   {path: "dragAndDrop", component: DragAndDropComponent},
 ];

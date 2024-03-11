@@ -1,0 +1,18 @@
+[
+    {
+        "id": 0,
+        "name": "Doxxa", 
+        "avatar": "", 
+        "description": "Hi, I'm 22, photographer in Pennsylvania",
+        "karma": 324,
+        "cakeDay": "02/08/1999"
+    },
+    {
+        "id": 1,
+        "name": "Hexlock", 
+        "avatar": "", 
+        "description": "Hi, I'm 38 and I love biking, hiking and travelling around the world",
+        "karma": 1245,
+        "cakeDay": "02/08/1990"
+    }
+]

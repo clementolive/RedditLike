@@ -1,4 +1,5 @@
 export interface Thread {
+    id: number;
     title: string, 
     user: string, 
     date: string, 
