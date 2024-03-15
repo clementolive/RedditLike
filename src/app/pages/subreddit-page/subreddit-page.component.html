@@ -1,7 +1,15 @@
 <app-navbar></app-navbar>
 
-<div class="container mt-5">
-    <div *ngFor="let thread of threads$ | async">
-        <app-thread [thread]="thread"></app-thread>
-    </div>
+<div class="row d-flex justify-content-center mt-5">
+    <div class="col-6">
+        <app-create-post></app-create-post>
+        <app-sort-banner></app-sort-banner>
+        <div *ngFor="let thread of threads$ | async">
+             <app-thread [thread]="thread"></app-thread>
+        </div>
+     </div>
+
+     <div class="col-3">
+         <app-side-links></app-side-links>
+     </div>
 </div>

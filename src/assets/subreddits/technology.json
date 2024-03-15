@@ -7,8 +7,8 @@
         "subreddit": "technology", 
         "upvotes": 3, 
         "commentsCount": 2, 
-        "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
-        "contentImage": "assets/laptop.jpg"
+        "contentText": "",
+        "contentImage": "assets/images/laptop.jpg"
     },
     {
         "title": "Issue with Windows 10", 
@@ -18,7 +18,7 @@
         "upvotes": 3, 
         "commentsCount": 2, 
         "contentText": "My Windows 10 keep rebooting every 10mn, can you help me? I'm on a laptop with a i5-12400KF",
-        "contentImage": "assets/laptop.jpg"
+        "contentImage": ""
     },
     {
         "title": "New Ipad 10", 
@@ -28,7 +28,7 @@
         "upvotes": 3, 
         "commentsCount": 2, 
         "contentText": "Lorem",
-        "contentImage": "assets/ipad.jpg"
+        "contentImage": "assets/images/ipad.jpg"
     },
     {
         "title": "Should I get an Ipad for drawing ?", 

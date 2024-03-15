@@ -12,9 +12,9 @@
                     <div class="col">Upvoted</div>
                     <div class="col">Downvoted</div>
                 </div>
-              
+
             </div>
-            
+
         </div>
     </div>
 
@@ -25,25 +25,26 @@
         <div class="col-6">
 
             <div *ngFor="let thread of threads$ | async">
-                 <app-thread [thread]="thread"></app-thread>
+                <app-thread [thread]="thread"></app-thread>
             </div>
-            
-         </div>
 
-         <div class="col-3">
+        </div>
+
+        <!-- User part  -->
+        <div class="col-3" *ngIf="user$ | async as user">
             <div class="container bg-dark text-white rounded-1 border border-secondary p-2">
                 <div class="row p-2">
                     <div class="col">
-                        <div class="row"><img class="avatar"
-                            src="https://api.dicebear.com/7.x/lorelei/svg?seed=Cali"
-                            alt="avatar" /></div>
-                        
-                        <div class="row h2 d-flex justify-content-center">{{myName}}</div>
-                        <div class="row text-secondary d-flex justify-content-center">u/{{myName}} 6y</div>
+                        <div class="row"><img class="avatar" src="https://api.dicebear.com/7.x/lorelei/svg?seed=Cali"
+                                alt="avatar" /></div>
+
+                        <div class="row h2 d-flex justify-content-center">{{user.name}}</div>
+                        <div class="row text-secondary d-flex justify-content-center">u/{{user.name}} 6y</div>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center mt-1">
-                    <button type="button" class="btn btn-warning rounded-5 btn-sm w-50" (click)="styleAvatar()">Style avatar</button>
+                    <button type="button" class="btn btn-warning rounded-5 btn-sm w-50" (click)="styleAvatar()">Style
+                        avatar</button>
                 </div>
                 <div class="row mt-1">
                     <div class="col ps-3 ms-3">
@@ -57,12 +58,14 @@
                 </div>
 
                 <div class="row d-flex justify-content-center mt-1">
-                    <button type="button" class="btn btn-secondary rounded-5 btn-sm w-50" (click)="addSocial()">Add social link</button>
+                    <button type="button" class="btn btn-secondary rounded-5 btn-sm w-50" (click)="addSocial()">Add
+                        social link</button>
                 </div>
                 <div class="row d-flex justify-content-center mt-1">
-                    <button type="button" class="btn btn-light rounded-5 btn-sm w-50" (click)="newPost()">New Post</button>
+                    <button type="button" class="btn btn-light rounded-5 btn-sm w-50" (click)="newPost()">New
+                        Post</button>
                 </div>
-                <div class="row d-flex justify-content-end pe-3 m-2">More options</div>   
+                <div class="row d-flex justify-content-end pe-3 m-2">More options</div>
             </div>
 
             <div class="container bg-dark text-white rounded-1 border border-secondary p-2 mt-3">
@@ -81,6 +84,6 @@
                 </div>
             </div>
 
-         </div>
+        </div>
     </div>
 </div>

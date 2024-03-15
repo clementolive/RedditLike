@@ -1,6 +1,14 @@
 [
     {
         "id": 0,
+        "name": "MyName", 
+        "avatar": "", 
+        "description": "Hi, I'm 24. I like reading, writing and making video games.",
+        "karma": 245,
+        "cakeDay": "01/08/1991"
+    },
+    {
+        "id": 1,
         "name": "Doxxa", 
         "avatar": "", 
         "description": "Hi, I'm 22, photographer in Pennsylvania",
@@ -8,7 +16,7 @@
         "cakeDay": "02/08/1999"
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Hexlock", 
         "avatar": "", 
         "description": "Hi, I'm 38 and I love biking, hiking and travelling around the world",

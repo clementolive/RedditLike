@@ -9,7 +9,7 @@
         "upvotes": 34, 
         "commentsCount": 32, 
         "contentText": "",
-        "contentImage": "assets/landscape.jpg"
+        "contentImage": "assets/images/landscape.jpg"
     },
     {
         "id": 1,
@@ -20,7 +20,7 @@
         "upvotes": 24, 
         "commentsCount": 33, 
         "contentText": "",
-        "contentImage": "assets/narcissus.jpg"
+        "contentImage": "assets/images/narcissus.jpg"
     },
     {
         "id": 2,
@@ -31,7 +31,7 @@
         "upvotes": 3, 
         "commentsCount": 2, 
         "contentText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, laborum eaque illo ut vel, dignissimos ratione nesciunt at, aut illum atque voluptas voluptatum ipsam harum quaerat architecto voluptatibus? Nobis quas dolorum quisquam nihil esse quasi iure. Repellat porro odit harum.",
-        "contentImage": "assets/laptop.jpg"
+        "contentImage": "assets/images/laptop.jpg"
     },
     {
         "id": 3,
@@ -42,6 +42,6 @@
         "upvotes": 3, 
         "commentsCount": 2, 
         "contentText": "My Windows 10 keep rebooting every 10mn, can you help me? I'm on a laptop with a i5-12400KF",
-        "contentImage": "assets/laptop.jpg"
+        "contentImage": "assets/images/laptop.jpg"
     }
     ]

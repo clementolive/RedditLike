@@ -8,7 +8,7 @@
     "upvotes": 34, 
     "commentsCount": 32, 
     "contentText": "",
-    "contentImage": "assets/landscape.jpg"
+    "contentImage": "assets/images/landscape.jpg"
 },
 {
     "title": "Flower", 
@@ -18,7 +18,7 @@
     "upvotes": 24, 
     "commentsCount": 33, 
     "contentText": "",
-    "contentImage": "assets/narcissus.jpg"
+    "contentImage": "assets/images/narcissus.jpg"
 },
 {
     "title": "Dune", 
@@ -28,6 +28,6 @@
     "upvotes": 14, 
     "commentsCount": 11, 
     "contentText": "",
-    "contentImage": "/src/assets/narcissus.jpg"
+    "contentImage": "assets/images/dune.jpg"
 }
 ]

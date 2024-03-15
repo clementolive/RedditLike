@@ -9,7 +9,7 @@ import { SubredditPageComponent } from './pages/subreddit-page/subreddit-page.co
 const routes: Routes = [
   {path: "", component: HomeComponent},
   {path: "threadPage/:id", component: ThreadPageComponent},
-  {path: "profilePage", component: ProfileComponent},
+  {path: "profilePage/:username", component: ProfileComponent},
   {path: "dragAndDrop", component: DragAndDropComponent},
   {path: "subredditPage/:subreddit", component: SubredditPageComponent},
 

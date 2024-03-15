@@ -15,7 +15,7 @@
                 <div class="row pb-1">
                     <div class="col-3 p-0"><img class="rounded-circle" src="https://picsum.photos/20" alt=""
                         >  <a routerLink="" (click)="goToSubreddit(thread.subreddit)">r/{{thread.subreddit}}</a></div>
-                    <div class="col text-secondary">Posted by <a routerLink="profilePage">u/{{thread.user}}</a> the {{thread.date}}</div>
+                    <div class="col text-secondary">Posted by <a routerLink="" (click)="goToProfile(thread.user)">u/{{thread.user}}</a> the {{thread.date}}</div>
                    
                 </div>
                 <div class="row h5"><a routerLink="" (click)="goToThread(thread.id)">{{thread.title}}</a></div>
